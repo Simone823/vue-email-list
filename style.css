@@ -5,4 +5,51 @@
     box-sizing: border-box;
     font-family: 'Syne Mono', monospace;
     font-size: 18px;
+    color: white;
+}
+
+/* Variabili colori */
+:root {
+    --color--blue: #102c54;
+    --color--red: #b32821;
+    --shadow--color: black;
+    --color-yellow_green: yellowgreen;
+}
+
+/* -------------------------------------------------- */
+
+body {
+    background-color: var(--color--blue);
+}
+
+#app { 
+    padding: 25px 0;
+}
+
+.email_wrapper {
+    padding: 0 20px;
+    width: 100%;
+}
+
+.email_wrapper h1 {
+    color: var(--color--red);
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-shadow: 0 0 10px var(--shadow--color);
+}
+
+.email_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 20px;
+}
+
+.email_list .email {
+    padding: 10px;
+    border-radius: 5px;
+    flex-basis: calc(100% / 5 - 25px);
+    box-shadow: 0 0 8px var(--color-yellow_green);
 }
