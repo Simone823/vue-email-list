@@ -2,7 +2,11 @@ const app = new Vue({
     el: "#app",
 
     data: {
+        // Array Email
         arrayEmail: [],
+
+        // Titolo
+        title: "Vue Email List",
     },
 
     created() {
