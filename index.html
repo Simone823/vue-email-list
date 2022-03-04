@@ -25,7 +25,17 @@
 
     <!-- Vue app -->
     <div id="app">
-        
+
+        <!-- Wrapper Email -->
+        <div class="email_wrapper">
+            <!-- Titolo -->
+            <h1>{{title}}</h1>
+            <!-- Lista email -->
+            <ul class="email_list">
+                <li class="email" v-for="element in arrayEmail" v-if="arrayEmail.length != 0">{{element}}</li>
+            </ul>
+        </div>
+
     </div>
 
     <!-- Link Javascript -->
