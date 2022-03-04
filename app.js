@@ -15,11 +15,15 @@ const app = new Vue({
             .then((response) => {
 
                 // Variabile singola email
-                const email = response.data;
+                const email = response.data.response;
                 console.log(email);
+
+                // Pusho l'email nell'array arrayEmail
+                this.arrayEmail.push(email);
             });
         }
-        
+        console.log(this.arrayEmail);
+
     },
 });
 
